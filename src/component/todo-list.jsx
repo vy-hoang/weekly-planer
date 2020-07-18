@@ -1,8 +1,29 @@
 import React, { useState } from 'react';
+import Note from "./note";
+
 
 function List(){
 
-    function handleChange(){}
+    const[item, setItem] = useState("");
+    const [array, setArray] = useState([]);
+
+    function handleChange(event){
+        const todo = event.target.value;
+        setItem(todo);
+        console.log(item);
+    }
+
+        function handleClick(event){
+        setArray(preValue =>{
+            return[
+                ...preValue, item
+            ];
+        });
+        console.log(array);
+        setItem("");
+    }
+
+    
 
     return(
 
@@ -11,10 +32,19 @@ function List(){
                 <h1> to-do list</h1>
             </div>
             <div>
-                <form>
-                    <input  className="line" type="text" onChange={handleChange} ></input>
-                    <button> <span>Add</span></button>
-                </form>
+                <div>
+                    <input name="input" className="line" type="text" onChange={handleChange} value={item}></input>
+                    <button onClick={handleClick} type="submit"> <span >Add</span></button>
+                    
+                </div>
+                {array.map((list) =>{
+                    return(
+                        <Note 
+                            content={list} 
+                        />
+                    );
+                    })}
+                
             </div>
       </div>
 
