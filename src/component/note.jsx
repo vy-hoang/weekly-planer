@@ -5,7 +5,7 @@ function Note(props){
 
         <div>
             <ul>
-                <li>{props.content}</li>
+                <li> {props.content}<span><i class="fa fa-trash-o bin" /></span></li>
             </ul>
         </div>
 
