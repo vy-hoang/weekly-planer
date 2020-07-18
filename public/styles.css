@@ -103,3 +103,25 @@ body {
   .bin {
     float: right;
   }
+  .grid1{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 2em;
+  
+    background-color: powderblue;
+  }
+  .color{
+    background-color: peachpuff;
+  }
+  .mau{
+    background-color: plum;
+  }
+  .middle{
+    padding-bottom: -2em;
+    padding-top: -2em;
+
+  }
+  .mau{
+    text-align: center;
+    justify-content: center;
+  }
