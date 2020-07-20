@@ -53,17 +53,34 @@ body {
   }
   .grid{
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    background-color: rgb(255, 251, 245);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgb(220, 207, 188);
     display: grid;
+    position: relative;
+  }
+  
+  .grid-date{
+    grid-template-columns: repeat(7, 1fr);
+    display: grid;
+    
   }
   .grid-item {
-    
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 7%;
     padding: 20px;
     font-size: 30px;
-    text-align: center;
-  
+    
+    
+  }
+  .num{
+    cursor: pointer;
+  }
+  .num:hover{
+    background-color: rgb(245, 241, 235);
+  }
+  .extra{
+    border: 2px solid grey;
+    
+    background-color: rgb(215, 175, 75);
   }
   .line{
     border-style: none;
