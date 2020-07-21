@@ -8,6 +8,7 @@ import Calender from "./calender-note";
 
 function App() {
   const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  
   function AddNote(){
     console.log("clicked");
   }

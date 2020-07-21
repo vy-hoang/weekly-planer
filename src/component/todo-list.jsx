@@ -45,7 +45,7 @@ function List(){
 
         <div className="container">
             <div className="heading">
-                <h1> to-do list</h1>
+                <h1>Notes</h1>
             </div>
             <div>
                 <div>
